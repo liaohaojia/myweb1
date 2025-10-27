@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>冬风叶放 | 武大计算机 2025</title>
+  <link href="/myweb1/https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --text: #1f2937;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+    header { text-align: center; padding: 4rem 0 2rem; }
+    .avatar {
+      width: 150px; height: 150px; border-radius: 50%;
+      object-fit: cover; margin-bottom: 1.5rem;
+      border: 5px solid white;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+    h1 { font-size: 2.6rem; margin-bottom: 0.4rem; background: linear-gradient(90deg, #0d6efd, #0a4bb8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .tagline { color: #555; font-size: 1.15rem; margin-bottom: 1.8rem; font-weight: 500; }
+    .social-links {
+      display: flex; justify-content: center; gap: 1.2rem; margin: 2rem 0;
+    }
+    .social-links a {
+      color: #6b7280; font-size: 1.6rem; transition: all 0.3s;
+    }
+    .social-links a:hover { color: var(--primary); transform: translateY(-3px); }
+    section { margin: 3.5rem 0; }
+    h2 {
+      font-size: 1.6rem; margin-bottom: 1.2rem; color: var(--primary);
+      position: relative; padding-left: 1rem;
+    }
+    h2::before {
+      content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+      width: 5px; height: 1.4em; background: var(--primary); border-radius: 3px;
+    }
+    .timeline {
+      position: relative; padding-left: 2rem;
+    }
+    .timeline::before {
+      content: ''; position: absolute; left: 0.5rem; top: 0; bottom: 0;
+      width: 2px; background: #e5e7eb; z-index: 0;
+    }
+    .event {
+      background: var(--card); padding: 1.2rem 1.5rem; border-radius: 12px;
+      margin-bottom: 1.5rem; box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+      position: relative; z-index: 1;
+    }
+    .event-time { font-weight: 600; color: var(--primary); font-size: 0.95rem; }
+    .event-title { font-weight: 600; margin: 0.4rem 0; font-size: 1.1rem; }
+    .daily-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.3rem;
+    }
+    .daily-card {
+      background: var(--card); padding: 1.4rem; border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06); text-align: center;
+      transition: transform 0.3s;
+    }
+    .daily-card:hover { transform: translateY(-5px); }
+    .daily-icon { font-size: 2.2rem; margin-bottom: 0.8rem; }
+    .daily-title { font-weight: 600; margin-bottom: 0.5rem; }
+    .daily-desc { color: #6b7280; font-size: 0.92rem; }
+    .skills { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 0.8rem; }
+    .skill-tag {
+      background: #e0f2fe; color: #0d6efd; padding: 0.35rem 0.9rem;
+      border-radius: 999px; font-size: 0.85rem; font-weight: 500;
+    }
+    footer { text-align: center; padding: 3rem 0; color: #9ca3af; font-size: 0.92rem; border-top: 1px solid #e5e7eb; margin-top: 4rem; }
+  </style>
+  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+
+    <!-- 个人信息 -->
+    <header>
+      <img src="https://i.imgs.ovh/2025/10/28/7t2Fkg.jpeg" alt="7t2Fkg.jpeg" alt="冬风叶放" class="avatar" />
+      <h1>冬风叶放</h1>
+      <p class="tagline">武汉大学 · 2025级 计算机科学与技术</p>
+      <div class="social-links">
+        <a href="https://github.com/yourname" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:yourname@whu.edu.cn"><i class="fas fa-envelope"></i></a>
+        <a href="https://space.bilibili.com/yourid" target="_blank"><i class="fab fa-bilibili"></i></a>
+        <a href="https://blog.yourname.com" target="_blank"><i class="fas fa-blog"></i></a>
+      </div>
+    </header>
+
+    <!-- 关于我 -->
+    <section>
+      <h2>自我介绍</h2>
+      <p style="font-size:1.05rem; color:#374151;">
+        2025年秋天，我带着对代码与未来的好奇，走进武汉大学信息学部。
+        喜欢在珞珈山下写代码、打篮球，也在青楼（教一）和宿舍间穿梭。
+        正在用每一行代码，记录成长的轨迹。
+      </p>
+    </section>
+
+    <!-- 武大经历（时间线） -->
+    <section>
+      <h2>成长轨迹</h2>
+      <div class="timeline">
+         <div class="event">
+          <div class="event-time">2025.08.24</div>
+          <div class="event-title">参加"乐珈筑梦"武汉大学新生欢送会</div>
+          <p>参观乐山武大旧址，感受抗战烽火中的薪火相传</p>
+        </div>
+        <div class="event">
+          <div class="event-time">2025.09.01</div>
+          <div class="event-title">入学武汉大学</div>
+          <p>计算机类 · 信息学部 · 2025级</p>
+        </div>
+        <div class="event">
+          <div class="event-time">2025.10.10</div>
+          <div class="event-title">参加篮球新生杯</div>
+          <p>虽小组未能出线，但还是收获了许多</p>
+        </div>
+        <div class="event">
+          <div class="event-time">2025.10.19</div>
+          <div class="event-title">加入 计算机学院龙舟拔河队</div>
+          <p>随队在2025年武汉大学龙舟拔河比赛中夺冠</p>
+        </div>
+        <div class="event">
+          <div class="event-time">2025.10.27</div>
+          <div class="event-title">计算机学院篮球队</div>
+          <p>开始努力训练，目标：腾飞杯能够上场</p>
+        </div>
+         <div class="event">
+          <div class="event-time">2025.10.28</div>
+          <div class="event-title">组队参加"零杯"网页设计大赛</div>
+          <p>想让老师叫出我们的队名"哈基米南北绿豆"（doge)</p>
+        </div>
+        <div class="event">
+          <div class="event-time">未来</div>
+          <div class="event-title">未完待续</div>
+          <p>..........</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 校园日常（卡片网格） -->
+    <section>
+      <h2>珞珈日常</h2>
+      <div class="daily-grid">
+        <div class="daily-card">
+          <div class="daily-icon">🌅</div>
+          <div class="daily-title">看东湖日出</div>
+          <p class="daily-desc">4点起床，迎着东湖日出，困意瞬间消散</p>
+        </div>
+        <div class="daily-card">
+          <div class="daily-icon">💻</div>
+          <div class="daily-title">信息学部图书馆</div>
+          <p class="daily-desc">刷题 + 听网课</p>
+        </div>
+        <div class="daily-card">
+          <div class="daily-icon">🏀</div>
+          <div class="daily-title">篮球院队</div>
+          <p class="daily-desc">每周三次，把自己训练成3D球员</p>
+        </div>
+        <div class="daily-card">
+          <div class="daily-icon">📸</div>
+          <div class="daily-title">摄影记录</div>
+          <p class="daily-desc">用手机记录校园四季</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 技术栈 -->
+    <section>
+      <h2>当前掌握</h2>
+      <div class="skills">
+        <span class="skill-tag">等待我用时间来填满这里的空白</span>
+      </div>
+    </section>
+
+    <!-- 正在学习 -->
+    <section>
+      <h2>正在攻克</h2>
+      <p>📚 <strong>C++</strong> · <strong>Python</strong> · <strong>机器学习</strong></p>
+      <p>🚀 目标：大一学期自学 <strong>科研基础</strong> + <strong>AI</strong></p>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+      <p>© 2025 冬风叶放 | 珞珈山下，代码为诗</p>
+      <p style="margin-top:0.5rem; font-size:0.85rem;">
+        <a href="https://whu.edu.cn" style="color:#0d6efd; text-decoration:none;">武汉大学</a> · 
+        <a href="mailto:dongfengyefang@whu.edu.cn" style="color:#0d6efd; text-decoration:none;">yourname@whu.edu.cn</a>
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
